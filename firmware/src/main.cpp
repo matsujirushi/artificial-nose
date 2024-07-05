@@ -42,17 +42,16 @@ TFT_eSprite spr = TFT_eSprite(&tft); // main sprite
 #include "fonts/roboto_bold_28.h"
 
 #include "images/icon_ambient.h"
-#include "images/icon_anomaly.h"
-#include "images/icon_coffee.h"
-#include "images/icon_no_anomaly.h"
-#include "images/icon_whiskey.h"
+#include "images/icon_coke.h"
+#include "images/icon_pepsi.h"
 
-#include "images/icon_wifi.h"
+#include "images/icon_anomaly.h"
+#include "images/icon_no_anomaly.h"
 
 #define USE_ICONS 1
 
 #if USE_ICONS
-const unsigned short* ICONS_MAP[] = { icon_ambient, icon_coffee, icon_whiskey };
+const unsigned short* ICONS_MAP[] = { icon_ambient, icon_coke, icon_pepsi }; // See ei_classifier_inferencing_categories.
 #endif
 
 typedef uint32_t (GAS_GMXXX<TwoWire>::*sensorGetFn)();
